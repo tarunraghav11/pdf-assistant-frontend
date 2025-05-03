@@ -19,10 +19,11 @@ function App() {
       formData.append('pdf', file)
       formData.append('task', task)
 
-      const response = await fetch('http://localhost:5000/api/process', {
+      const API_URL = process.env.REACT_APP_API_URL || 'https://your-vercel-backend.vercel.app';
+      const response = await fetch(`${API_URL}/api/process`, {
         method: 'POST',
         body: formData,
-      })
+      });
 
       if (!response.ok) throw new Error('Processing failed')
       
