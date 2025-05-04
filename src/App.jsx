@@ -19,7 +19,8 @@ function App() {
       formData.append('pdf', file)
       formData.append('task', task)
 
-      const API_URL = process.env.REACT_APP_API_URL || 'https://your-vercel-backend.vercel.app';
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
       const response = await fetch(`${API_URL}/api/process`, {
         method: 'POST',
         body: formData,
