@@ -19,7 +19,7 @@ function App() {
       formData.append('pdf', file)
       formData.append('task', task)
 
-      const API_URL = https://pdf-assitant-backend.onrender.com || 'http://localhost:5000';
+      const API_URL = 'https://pdf-assitant-backend.onrender.com' || 'http://localhost:5000';
 
       const response = await fetch(`${API_URL}/api/process`, {
         method: 'POST',
