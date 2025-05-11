@@ -42,7 +42,13 @@ function App() {
       formData.append('pdf', file);
       formData.append('task', task);
 
+<<<<<<< HEAD
       const response = await fetch(`${API_URL}/api/pdf/process`, {
+=======
+      const API_URL = 'https://pdf-assitant-backend.onrender.com' || 'http://localhost:5000';
+
+      const response = await fetch(`${API_URL}/api/process`, {
+>>>>>>> b324cf4a5bc7b6a27fe5959d1e7431303cddb41c
         method: 'POST',
         body: formData,
       });
@@ -120,4 +126,8 @@ function App() {
   );
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App
+>>>>>>> b324cf4a5bc7b6a27fe5959d1e7431303cddb41c
