@@ -11,9 +11,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const API_URL = import.meta.env.VITE_API_URL;
-
-      const response = await axios.post(`${API_URL}/api/auth/register`, {
+      const response = await axios.post('https://pdf-assitant-backend.onrender.com/api/auth/register', {
         name,
         email,
         password,

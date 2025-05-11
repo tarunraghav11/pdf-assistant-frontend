@@ -10,9 +10,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const API_URL = import.meta.env.VITE_API_URL;
-      const res = await axios.post(`${API_URL}/api/auth/login`, { email, password });
-
+      const res = await axios.post('https://pdf-assitant-backend.onrender.com/api/auth/login', { email, password });
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (err) {

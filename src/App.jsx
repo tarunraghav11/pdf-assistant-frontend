@@ -11,7 +11,7 @@ function App() {
   const [history, setHistory] = useState([]);
 
   const token = localStorage.getItem('token');
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://pdf-assitant-backend.onrender.com';
 
   // Fetch user data on load
   useEffect(() => {
