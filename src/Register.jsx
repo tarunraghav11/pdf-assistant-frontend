@@ -11,7 +11,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://pdf-assitant-backend.onrender.com/api/auth/register', {
+      const response = await axios.post('http://localhost:5000/api/auth/register', {
         name,
         email,
         password,
