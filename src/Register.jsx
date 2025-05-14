@@ -11,7 +11,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post('pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net/api/auth/register', {
         name,
         email,
         password,

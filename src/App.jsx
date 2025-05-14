@@ -11,7 +11,7 @@ function App() {
   const [history, setHistory] = useState([]);
 
   const token = localStorage.getItem('token');
-  const API_URL = 'http://localhost:5000'; 
+  const API_URL = 'pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net'; 
 
   // Fetch user data on load
   useEffect(() => {
