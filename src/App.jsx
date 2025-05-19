@@ -12,7 +12,7 @@ function App() {
   const [error, setError] = useState(null);
   const [activeTask, setActiveTask] = useState(null);
   const token = localStorage.getItem('token');
-  const API_URL = 'pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net';
+  const API_URL = 'https://pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net';
 
   const handleProcess = async (file, task) => {
     setIsLoading(true);

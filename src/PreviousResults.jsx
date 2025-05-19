@@ -8,7 +8,7 @@ export default function PreviousResults() {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const res = await axios.get('http://pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net/api/userdata/data', {
+        const res = await axios.get('https://pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net/api/userdata/data', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
