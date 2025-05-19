@@ -14,11 +14,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Navigate to="/register" />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={
-          <PrivateRoute>
-            <App />
-          </PrivateRoute>
-        } />
+        {/* Dashboard with nested routes */}
+        <Route
+          path="/dashboard/*"
+          element={
+            <PrivateRoute>
+              <App />
+            </PrivateRoute>
+          }
+        />
+        {/* Optional: Catch all unmatched routes and redirect */}
+        <Route path="*" element={<Navigate to="/register" replace />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

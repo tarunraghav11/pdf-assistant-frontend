@@ -10,7 +10,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net/api/auth/login', {
+      const res = await axios.post('http://pdf-backend-new-hdcdgxh4bpe6e9fu.centralindia-01.azurewebsites.net/api/auth/login', {
         email,
         password
       });
